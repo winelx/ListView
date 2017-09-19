@@ -1,4 +1,4 @@
-package jay.com.listviewdemo6;
+package jay.com.listviewdemo6.holder;
 
 import com.recker.flybanner.FlyBanner;
 
@@ -7,5 +7,5 @@ import com.recker.flybanner.FlyBanner;
  */
 
 public class ViewHolder3 {
-    FlyBanner mBanner;
+    public FlyBanner mBanner;
 }

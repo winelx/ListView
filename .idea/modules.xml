@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ListViewDemo6.iml" filepath="$PROJECT_DIR$/ListViewDemo6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListView.iml" filepath="$PROJECT_DIR$/ListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/flybanner/flybanner.iml" filepath="$PROJECT_DIR$/flybanner/flybanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragmentaion/fragmentaion.iml" filepath="$PROJECT_DIR$/fragmentaion/fragmentaion.iml" />
     </modules>
   </component>
 </project>

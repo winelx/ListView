@@ -1,4 +1,4 @@
-package jay.com.listviewdemo6;
+package jay.com.listviewdemo6.Bean;
 
 /**
  * Created by Jay on 2015/9/22 0022.

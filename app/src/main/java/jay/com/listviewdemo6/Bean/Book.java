@@ -1,4 +1,4 @@
-package jay.com.listviewdemo6;
+package jay.com.listviewdemo6.Bean;
 
 /**
  * Created by Jay on 2015/9/22 0022.
@@ -9,12 +9,10 @@ public class Book {
 
     public Book() {
     }
-
     public Book(String bName, String bAuthor) {
         this.bName = bName;
         this.bAuthor = bAuthor;
     }
-
     public String getbName() {
         return bName;
     }

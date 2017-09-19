@@ -1,4 +1,4 @@
-package jay.com.listviewdemo6;
+package jay.com.listviewdemo6.holder;
 
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -8,7 +8,7 @@ import android.widget.TextView;
  */
 
 public class ViewHolder1 {
-    ImageView img_icon;
-    TextView txt_aname;
+   public ImageView img_icon;
+    public  TextView txt_aname;
 }
 

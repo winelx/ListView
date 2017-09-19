@@ -1,4 +1,4 @@
-package jay.com.listviewdemo6;
+package jay.com.listviewdemo6.holder;
 
 import android.widget.TextView;
 
@@ -7,6 +7,6 @@ import android.widget.TextView;
  */
 
 public class ViewHolder2 {
-    TextView txt_bname;
-    TextView txt_bauthor;
+    public TextView txt_bname;
+    public  TextView txt_bauthor;
 }

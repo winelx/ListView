@@ -7,11 +7,18 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.recker.flybanner.FlyBanner;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import jay.com.listviewdemo6.Bean.App;
+import jay.com.listviewdemo6.Bean.Book;
+import jay.com.listviewdemo6.Bean.ListB;
+import jay.com.listviewdemo6.holder.ViewHolder1;
+import jay.com.listviewdemo6.holder.ViewHolder2;
+import jay.com.listviewdemo6.holder.ViewHolder3;
 
 /**
  * Created by Jay on 2015/9/23 0023.
@@ -54,7 +61,7 @@ public class MutiLayoutAdapter extends BaseAdapter {
             return TYPE_APP;
         } else if (mData.get(position) instanceof Book) {
             return TYPE_BOOK;
-        } else if (mData.get(position) instanceof banner) {
+        } else if (mData.get(position) instanceof ListB) {
             return TYPE_BANNER;
         } else {
             return super.getItemViewType(position);
@@ -129,15 +136,16 @@ public class MutiLayoutAdapter extends BaseAdapter {
                 }
                 break;
             case TYPE_BANNER:
-                banner mbanner = (banner) obj;
+                ListB mbanner = (ListB) obj;
                 if (mbanner != null) {
-                    List<Integer> images = new ArrayList<>();
-                    images.add(R.mipmap.launcher_01);
-                    images.add(R.mipmap.launcher_02);
-                    images.add(R.mipmap.launcher_03);
-                    images.add(R.mipmap.launcher_04);
-                    holder3.mBanner.setImages(images);
-
+                    holder3.mBanner.setImagesUrl(mbanner.getListB());
+                    holder3.mBanner.setOnItemClickListener(new FlyBanner.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(int position) {
+                          int  positions=position+1;
+                            Toast.makeText(mContext, "点击了第" + positions+ "张图片", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
                 break;
         }

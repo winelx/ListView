@@ -1,21 +1,21 @@
-package jay.com.listviewdemo6;
+package jay.com.listviewdemo6.Bean;
 
 /**
  * Created by 10942 on 2017/9/14 0014.
  */
 
 public class banner {
-    private  String str;
+    private int str;
 
-    public banner(String str) {
+    public banner(int str) {
         this.str = str;
     }
 
-    public String getStr() {
+    public int getStr() {
         return str;
     }
 
-    public void setStr(String str) {
+    public void setStr(int str) {
         this.str = str;
     }
 }
